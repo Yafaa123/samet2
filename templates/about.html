@@ -1,0 +1,55 @@
+<html>
+<head>
+  <style>
+
+      ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+body{
+  background: #BFC8AD
+}
+
+h1{
+  color:#545775
+}
+
+h3{
+  color:#718f94
+}
+
+body {font-family: Verdana, sans-serif; margin:0}
+
+</style>
+</head>
+<body>
+
+ <ul>
+  <li><a href="{{url_for('home')}}">Home</a></li>
+  <li><a href="{{url_for('spotify')}}">Spotify</a></li>
+  <li style="float:right"><a class="active" href="{{url_for('about')}}">About Us</a></li>
+</ul>
+<br>
+<center><h1>What is Life?</h1></center>
+</body>
+</html>

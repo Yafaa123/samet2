@@ -1,0 +1,72 @@
+<html>
+<head>
+  <style>
+
+      ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+body{
+  background: #BFC8AD
+}
+
+h1{
+  color:#545775
+}
+
+h3{
+  color:#718f94
+}
+
+body {font-family: Verdana, sans-serif; margin:0}
+
+</style>
+</head>
+<body>
+
+ <ul>
+  <li><a href="{{url_for('home')}}">Home</a></li>
+  <li><a href="{{url_for('spotify')}}">Spotify</a></li>
+  <li style="float:right"><a class="active" href="{{url_for('about')}}">About Us</a></li>
+</ul>
+<br>
+<center><h1>Chromatica</h></center>
+<center>
+    <div class="chromatica">
+    <iframe src="https://open.spotify.com/embed/album/05c49JgPmL4Uz2ZeqRx5SP" width="25%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media" style="display: inline"></iframe></div>
+
+</div>
+<br>
+<center><h1>Better Than Berlin</h></center>
+<div class="chromatica">
+<iframe src="https://open.spotify.com/embed/album/3p2AOgMBM69rD4acXEI0ay" width="25%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture style="display: inline""></iframe></div>
+<br>
+<center><h1>Kid Krow</h></center>
+<div class="chromatica">
+<iframe src="https://open.spotify.com/embed/album/2CMlkzFI2oDAy5MbyV7OV5" width="25%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture style="display: inline"></iframe></div>
+<br>
+<center><h1>Positions</h></center>
+<iframe src="https://open.spotify.com/embed/album/3euz4vS7ezKGnNSwgyvKcd" width="25%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture style="display: inline"></iframe>
+
+</body>
+</html>

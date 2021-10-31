@@ -1,0 +1,127 @@
+body {
+    font-family: "Lato", sans-serif;
+    background:#bfc8ad
+}
+
+#stats{
+  transform: translate(600px, 0px);
+  display: inline-block;
+}
+
+#statsJerusalem{
+  display: inline-block;
+  padding-left:50px
+}
+
+#statsBoston{
+  display: inline-block;
+}
+
+.main-head{
+    height: 150px;
+    background: #bfc8ad;
+   
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+    width: 60%;
+}
+
+
+.main {
+    padding: 0px 0px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 0px}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+#LeftBarImage{
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        
+    }
+
+    .login-form{
+        margin-top: 30%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #bfc8ad;
+}
+
+
+#emailDIV{
+  padding-bottom: 20px;
+}
+
+#passwordDIV{
+  padding-bottom: 20px;
+}
+
+#usernameDIV{
+  padding-bottom: 20px;
+}
+
+#emailLabel{
+  padding: 10px;
+}
+
+#passwordLabel{
+  padding: 10px;
+}
+
+#emailInput{
+  padding-top: 10px;
+}
+
+#passwordInput{
+  padding-top: 10px;
+}
+

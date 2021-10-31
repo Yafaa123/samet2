@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+ <head> 
+  <link href="style.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='css/signup.css' )}}">
+<!------ Include the above in your HEAD tag ---------->
+<style>
+body {
+  background-color: lightblue;
+}
+</style>
+ </head>
+
+<body>
+<h1 style="text-align: center;">Welcome To My Website!</h1>
+<br>
+<center><img src="https://i.pinimg.com/originals/c1/2f/da/c12fda1158a9b72d3a7a7b755de15405.jpg" style="width:400px;height:500px;"></center><br>
+<form action="/" method="POST">     
+<center><label id = "emailLabel"> Email: </label><center>
+<input id = "email" type="email" class="form-control" placeholder="Enter Your Email" name = "email"><br>
+<label id = "passwordLabel">Password:</label>
+<br>
+<input id = "password" type="password" name = "password" classinform-control" placeholder="Enter Your Password">
+<br>
+<label id = "usernameLabel">Username:</label> <br>
+<input id = "username" type="username" name="username" class="form-control" placeholder="Enter Your Username">
+<br><br>
+<a href="{{url_for('home')}}"><button type="submit" class="btn btn-secondary">Register</button></a>
+<br>
+                    {{stopbeingdumb}}
+<br>
+<br>
+<a href="{{url_for('login')}}">Already have an account? Click here</a>
+</form>
+</body>
+</html>
+ 

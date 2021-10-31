@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <style>
+
+      ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+  </head>
+<body>
+
+  <ul>
+  <li><a href="{{url_for('home')}}">Home</a></li>
+  <li><a href="{{url_for('spotify')}}">Spotify</a></li>
+  <li style="float:right"><a class="active" href="{{url_for('about')}}">About Us</a></li>
+</ul>
+<br>
+<form action="/action_page.php" style="border:1px solid #ccc">
+<div class="container">
+<center><img src="https://www.musik-sammler.de/cover/1463500/1463238_1591134210.jpg" alt="samt" width="200px" heigth="200px"></center>
+<center><h3>Album Name: Chromatica</h></center>
+<center><h3>Description: It's a very good dance-pop album.<br>It's a shame it was released during quarantine and didn't get the chance to be played at clubs as soon as it came out.</h3></center>
+<center><h3>Artist: Lady Gaga </h3></center>
+<center><h3>Genre: Pop</h></center>
+<center><h3>Rating: 9.5/10</h3></center>
+
+</div>
+</form>
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+<div class="container">
+<center><img src="https://assafirarabi.com/wp-content/uploads/2020/12/%D8%BA%D9%84%D8%A7%D9%81-%D8%A3%D8%AD%D9%84%D9%89-%D9%85%D9%86-%D8%A8%D8%B1%D9%84%D9%8A%D9%86.jpg" alt="samt3" width="200px" heigth="200px"></center>
+<center><h3>Album Name: Better Than Berlin</h></center>
+<center><h3>Description: It's a must-listen especially if you're a 48' Palestinian.<br>It captures the reality of being a Palestinian living in the territories that were occupied in 1948 in such a beautiful way.</h></center>
+<center><h3>Artist: Faraj Sulieman </h3></center>
+<center><h3>Genre: Jazz</h></center>
+<center><h3>Rating: 10/10</h3></center>
+</div>
+</form>
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+<div class="container">
+<center><img src="https://obarrete.com/wp-content/uploads/2020/09/kid-krow-e1599172218235.jpeg" alt="samt3" width="200px" heigth="200px"></center>
+<center><h3>Album Name: Kid Krow</h></center>
+<center><h3>Description: It's a good album if you're having a crush on someone who will never like you back;(</h></center>
+<center><h3>Artist: Conan Gray </h3></center>
+<center><h3>Genre: Indie-Pop</h></center>
+<center><h3>Rating: 7/10</h3></center>
+</div>
+</form>
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+<div class="container">
+<center><img src="https://c.files.bbci.co.uk/115DE/production/_115143117_albumcoverpa.jpg" alt="samt3" width="200px" heigth="200px"></center>
+<center><h3>Album Name: Positions</h></center>
+<center><h3>Description: Not to be harsh but this is nothing compared to her other albums:/<br> I suggest you listen to Dangerous Woman or thank u,next.</h></center>
+<center><h3>Artist: Ariana Grande </h3></center>
+<center><h3>Genre: Pop</h></center>
+<center><h3>Rating: 6.5/10</h3></center>
+</div>
+</form>
+
+</body>
+</html>
+
+
+
+
